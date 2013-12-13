@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Template &middot; Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/home">Home</a></li>
+          <li ><a href="/about">About</a></li>
+          <li class="active"><a href="/contact">Contact</a></li>
+        </ul>
+        <h3 class="muted">NoStop</h3>
+      </div>
+
+      <hr>
+<div class="section" id="example">
+	<h2>Examples</h2>
+
+	<h3>Single image</h3>
+  <div class="imageRow">
+  	<div class="single">
+  		<a href="assets/examples/image-1.jpg" rel="lightbox"><img src="assets/examples/thumb-1.jpg" alt="" /></a>
+  	</div>
+  	<div class="single">
+  		<a href="assets/examples/image-2.jpg" rel="lightbox" title="Optional caption."><img src="assets/examples/thumb-2.jpg" alt="" /></a>
+  	</div>
+  </div>
+
+	<h3 style="clear: both;">Image set</h3>
+
+  <div class="imageRow">
+  	<div class="set">
+  	  <div class="single first">
+  		  <a href="assets/examples/image-3.jpg" rel="lightbox[plants]" title="Click on the right side of the image to move forward."><img src="assets/examples/thumb-3.jpg" alt="Plants: image 1 0f 4 thumb" /></a>
+  		</div>
+      <div class="single">
+  		  <a href="assets/examples/image-4.jpg" rel="lightbox[plants]" title="Alternately you can press the right arrow key." ><img src="assets/examples/thumb-4.jpg" alt="Plants: image 2 0f 4 thumb" /></a>
+      </div>
+      <div class="single">
+  		  <a href="assets/examples/image-5.jpg" rel="lightbox[plants]" title="The script preloads the next image in the set as you're viewing."><img src="assets/examples/thumb-5.jpg" alt="Plants: image 3 0f 4 thumb" /></a>
+      </div>
+      <div class="single last">
+  		  <a href="assets/examples/image-6.jpg" rel="lightbox[plants]" title="Click the X or anywhere outside the image to close"><img src="assets/examples/thumb-6.jpg" alt="Plants: image 4 0f 4 thumb" /></a>
+      </div>
+  	</div>
+  </div>
+	
+</div>
+
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; Company 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+	<script>
+  jQuery(document).ready(function($) {
+      $('a').smoothScroll({
+        speed: 1000,
+        easing: 'easeInOutCubic'
+      });
+
+      $('.showOlderChanges').on('click', function(e){
+        $('.changelog .old').slideDown('slow');
+        $(this).fadeOut();
+        e.preventDefault();
+      })
+  });
+</script>
+
+
+  </body>
+</html>
+
