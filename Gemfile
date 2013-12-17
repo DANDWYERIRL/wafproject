@@ -5,6 +5,7 @@ gem 'ierail', '0.3.4'
 gem 'json', '1.7.7'
 gem 'yahoo_weatherman', '2.0.0'
 gem 'RailCalc', '0.0.3'
+gem 'rspec'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
