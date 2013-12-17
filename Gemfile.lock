@@ -60,6 +60,7 @@ GEM
     mime-types (1.25.1)
     multi_json (1.8.2)
     nokogiri (1.5.11)
+    pg (0.17.0)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -128,6 +129,7 @@ DEPENDENCIES
   ierail (= 0.3.4)
   jquery-rails
   json (= 1.7.7)
+  pg
   rails (= 3.2.14)
   rspec
   sass-rails (~> 3.2.3)
