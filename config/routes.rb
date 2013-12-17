@@ -1,4 +1,7 @@
 Waf::Application.routes.draw do
+  resources :blanks
+
+
   get "site/home"
   get "site/about"
   get "site/weather"

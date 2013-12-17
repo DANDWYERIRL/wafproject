@@ -1,0 +1,23 @@
+<h1>Listing blanks</h1>
+
+<table>
+  <tr>
+    <th>Notneeded</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @blanks.each do |blank| %>
+  <tr>
+    <td><%= blank.notneeded %></td>
+    <td><%= link_to 'Show', blank %></td>
+    <td><%= link_to 'Edit', edit_blank_path(blank) %></td>
+    <td><%= link_to 'Destroy', blank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Blank', new_blank_path %>
