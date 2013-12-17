@@ -100,7 +100,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  *----------------------------------------------- */
 /* line 33, ../sass/screen.sass */
 body {
-  background: #222222 url();
+  background: #222222 url(../assets/bg-checker.png);
 }
 
 /* line 36, ../sass/screen.sass */

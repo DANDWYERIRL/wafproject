@@ -1,12 +1,13 @@
 Waf::Application.routes.draw do
   get "site/home"
   get "site/about"
-
+  get "site/weather"
   get "site/contact"
 match '/about' => 'site#about'
 match '/home' => 'home#home'
-match '/contact' => 'site#contact'
-match 'home/location' => 'home#home'
+match '/gallery' => 'site#contact'
+match 'home/location' => 'home#myMethod'
+match '/weather' => 'site#weather'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

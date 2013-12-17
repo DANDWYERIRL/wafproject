@@ -68,95 +68,75 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li><a href="/home">Home</a></li>
-          <li class="active"><a href="/about">About</a></li>
-          <li><a href="/gallery">Gallery</a></li>
+          <li ><a href="/about">About</a></li>
+          <li class="active"><a href="/gallery">Gallery</a></li>
 	<li><a href="/weather">Weather</a></li>
         </ul>
         <h3 class="muted">NoStop</h3>
       </div>
 
       <hr>
+<div class="section" id="example">
+	<h2>Examples</h2>
 
-     			<div class="fluid_container">
-					<div id="Logo"></div>
-					
-					
-					<div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
-					
-					<!--Space Slides-->
-					
-						<div data-src="/assets/header/Ruby.png"></div>
-						
-						<div data-src="/assets/header/Rail.png"></div>
-						<div data-src="/assets/header/rubygems.png"></div>
-					
-					</div><!--#camera_wrap_1-->
-				</div>
+	<h3>Single image</h3>
+  <div class="imageRow">
+  	<div class="single">
+  		<a href="assets/examples/image-1.jpg" rel="lightbox"><img src="assets/examples/thumb-1.jpg" alt="" /></a>
+  	</div>
+  	<div class="single">
+  		<a href="assets/examples/image-2.jpg" rel="lightbox" title="Optional caption."><img src="assets/examples/thumb-2.jpg" alt="" /></a>
+  	</div>
+  </div>
 
+	<h3 style="clear: both;">Image set</h3>
+
+  <div class="imageRow">
+  	<div class="set">
+  	  <div class="single first">
+  		  <a href="assets/examples/image-3.jpg" rel="lightbox[plants]" title="Click on the right side of the image to move forward."><img src="assets/examples/thumb-3.jpg" alt="Plants: image 1 0f 4 thumb" /></a>
+  		</div>
+      <div class="single">
+  		  <a href="assets/examples/image-4.jpg" rel="lightbox[plants]" title="Alternately you can press the right arrow key." ><img src="assets/examples/thumb-4.jpg" alt="Plants: image 2 0f 4 thumb" /></a>
+      </div>
+      <div class="single">
+  		  <a href="assets/examples/image-5.jpg" rel="lightbox[plants]" title="The script preloads the next image in the set as you're viewing."><img src="assets/examples/thumb-5.jpg" alt="Plants: image 3 0f 4 thumb" /></a>
+      </div>
+      <div class="single last">
+  		  <a href="assets/examples/image-6.jpg" rel="lightbox[plants]" title="Click the X or anywhere outside the image to close"><img src="assets/examples/thumb-6.jpg" alt="Plants: image 4 0f 4 thumb" /></a>
+      </div>
+  	</div>
+  </div>
+	
+</div>
+
+
+      <hr>
 
       <div class="footer">
-        <br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
-
-<p>This web application has been created using the irish rail API and the use of Ruby on Rails and Ruby Gems</p>
-     
+        <p>&copy; Company 2013</p>
       </div>
 
     </div> <!-- /container -->
-	
-	<div class="container-narrow">
-		<hr>
-		<div class="footer">
-       		<p>&copy; Company 2013</p>
-      		</div>
-	</div>
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/jquery.js"></script>
+	<script>
+  jQuery(document).ready(function($) {
+      $('a').smoothScroll({
+        speed: 1000,
+        easing: 'easeInOutCubic'
+      });
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-    <script src="/assets/camera.min.js"></script>
-
-    <script src="/assets/jquery.easing.1.3.js"></script>
-
-    <script src="/assets/main.js"></script>
-    
-    <script>
-
-$(document).ready(function() {
-
-	$(function() {
-
-		$('#camera_wrap_1').camera({
-
-				height: '200px',
-				fx: 'stampede',
-				playPause: false,
-				pagination: false,
-				thumbnails: false,
-				navigation: true,
-				loader: 'none',
-				time: 700,
-		});
-	});
-});
-
+      $('.showOlderChanges').on('click', function(e){
+        $('.changelog .old').slideDown('slow');
+        $(this).fadeOut();
+        e.preventDefault();
+      })
+  });
 </script>
-
-
 
 
   </body>
