@@ -1,5 +1,7 @@
-![Codeship Status](https://www.codeship.io/projects/c1579e10-4954-0131-52b1-16f39b1a6d62/status)
+As the name suggests this was a submission for my web applicaitons framework project.
 
-this read me has nothing new in it 
-i have no update the name on heroku
+It was constructed using Ruby on Rails and was designed so that the user would input a location via google maps and the
+application would calculate the nearest Irish Rail Train station to the location that was clicked.
 
+This Functionality was created as a Ruby gem and is available for download as a gem at https://rubygems.org/gems/RailCalc
+or can be installed via "gem install RailCalc"
