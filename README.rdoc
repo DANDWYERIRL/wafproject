@@ -4,4 +4,4 @@ It was constructed using Ruby on Rails and was designed so that the user would i
 application would calculate the nearest Irish Rail Train station to the location that was clicked.
 
 This Functionality was created as a Ruby gem and is available for download as a gem at https://rubygems.org/gems/RailCalc
-or can be installed via "gem install RailCalc"
+or can be installed via "gem install RailCalc".
